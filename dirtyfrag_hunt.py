@@ -7,9 +7,9 @@ Purpose : Purple team / detection engineering.
           Checks system exposure and hunts for exploitation indicators.
           No external dependencies beyond Python 3.6+ stdlib.
 
-Author  : blacksunCUBE 
+Author  : 0xAllow 
 Date    : 2026-05-10
-Repo    : https://github.com/blacksunCUBE/Dirty-Frag-hunting
+Repo    : https://github.com/0xAllow/Dirty-Frag-hunting
 
 Usage:
     python3 dirtyfrag_hunt.py              # basic check (no root needed)
@@ -572,7 +572,7 @@ def print_report(findings, hostname, kver, distro, verbose=False):
     w = 72
     print()
     print(col(BOLD, "═" * w))
-    print(col(BOLD, "  blacksunCUBE — DirtyFrag Exposure & Hunting Tool"))
+    print(col(BOLD, "  0xAllow — DirtyFrag Exposure & Hunting Tool"))
     print(col(DIM,  "  CVE-2026-43284 · CVE-2026-43500"))
     print(col(BOLD, "─" * w))
     print(col(DIM,  f"  Host   : {hostname}"))
@@ -630,7 +630,7 @@ def get_distro():
 def parse_args():
     p = argparse.ArgumentParser(
         prog="dirtyfrag_hunt.py",
-        description="DirtyFrag exposure checker — blacksunCUBE",
+        description="DirtyFrag exposure checker — 0xAllow",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     p.add_argument("-v", "--verbose", action="store_true",
