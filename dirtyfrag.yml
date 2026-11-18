@@ -2,9 +2,9 @@
 # DirtyFrag Sigma Detection Rules
 # CVE-2026-43284 (xfrm-ESP) + CVE-2026-43500 (RxRPC)
 #
-# Author  : blacksunCUBE 
+# Author  : 0xAllow 
 # Date    : 2026-05-10
-# Repo    : https://github.com/blacksunCUBE/Dirty-Frag-hunting
+# Repo    : https://github.com/0xAllow/Dirty-Frag-hunting
 # Ref     : https://github.com/V4bel/dirtyfrag
 #
 # Usage   : sigma convert -t splunk dirtyfrag.yml
@@ -31,7 +31,7 @@ description: >
 references:
   - https://github.com/V4bel/dirtyfrag
   - https://www.openwall.com/lists/oss-security/2026/05/07/8
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.privilege_escalation
@@ -90,7 +90,7 @@ description: >
   (VPN daemons, strongSwan, libreswan).
 references:
   - https://github.com/V4bel/dirtyfrag
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.privilege_escalation
@@ -143,7 +143,7 @@ description: >
   In most enterprise environments, AF_RXRPC traffic is unexpected.
 references:
   - https://github.com/V4bel/dirtyfrag
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.privilege_escalation
@@ -192,7 +192,7 @@ description: >
   as non-root.
 references:
   - https://github.com/V4bel/dirtyfrag
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.privilege_escalation
@@ -253,7 +253,7 @@ description: >
   Requires a SIEM capable of event correlation (Splunk, Elastic, QRadar).
 references:
   - https://github.com/V4bel/dirtyfrag
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.privilege_escalation
@@ -308,7 +308,7 @@ description: >
   modules appear, the blacklist may have been tampered with.
 references:
   - https://github.com/V4bel/dirtyfrag
-author: blacksunCUBE
+author: 0xAllow
 date: 2026-05-10
 tags:
   - attack.defense_evasion
