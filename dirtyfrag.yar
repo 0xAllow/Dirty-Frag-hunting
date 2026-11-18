@@ -2,9 +2,9 @@
  * dirtyfrag.yar — YARA Detection Rules
  * CVE-2026-43284 (xfrm-ESP) + CVE-2026-43500 (RxRPC)
  *
- * Author  : blacksunCUBE 
+ * Author  : 0xAllow 
  * Date    : 2026-05-10
- * Repo    : https://github.com/blacksunCUBE/Dirty-Frag-hunting
+ * Repo    : https://github.com/0xAllow/Dirty-Frag-hunting
  * Ref     : https://github.com/V4bel/dirtyfrag
  *
  * Usage:
@@ -25,7 +25,7 @@ rule DirtyFrag_PoC_Source_V4bel
 {
     meta:
         description    = "Detects V4bel/dirtyfrag original PoC source code (exp.c)"
-        author         = "blacksunCUBE"
+        author         = "0xAllow"
         date           = "2026-05-10"
         reference      = "https://github.com/V4bel/dirtyfrag"
         cve            = "CVE-2026-43284, CVE-2026-43500"
@@ -79,7 +79,7 @@ rule DirtyFrag_PoC_Compiled_ELF
 {
     meta:
         description = "Detects compiled DirtyFrag PoC ELF binary"
-        author      = "blacksunCUBE"
+        author      = "0xAllow"
         date        = "2026-05-10"
         reference   = "https://github.com/V4bel/dirtyfrag"
         cve         = "CVE-2026-43284, CVE-2026-43500"
@@ -125,7 +125,7 @@ rule DirtyFrag_PoC_InMemory
 {
     meta:
         description = "Detects DirtyFrag PoC strings in process memory"
-        author      = "blacksunCUBE"
+        author      = "0xAllow"
         date        = "2026-05-10"
         cve         = "CVE-2026-43284, CVE-2026-43500"
         severity    = "critical"
@@ -161,7 +161,7 @@ rule Linux_PageCache_Write_Exploit_Generic
 {
     meta:
         description = "Generic detection for Linux page-cache write exploit class (DirtyFrag / Copy Fail / Dirty Pipe variants)"
-        author      = "blacksunCUBE"
+        author      = "0xAllow"
         date        = "2026-05-10"
         cve         = "CVE-2026-43284, CVE-2026-43500, CVE-2022-0847"
         severity    = "high"
@@ -208,7 +208,7 @@ rule DirtyFrag_Mitigation_Tamper
 {
     meta:
         description = "Detects attempts to remove the DirtyFrag modprobe.d mitigation or force-load blocked modules"
-        author      = "blacksunCUBE"
+        author      = "0xAllow"
         date        = "2026-05-10"
         cve         = "CVE-2026-43284, CVE-2026-43500"
         severity    = "high"
